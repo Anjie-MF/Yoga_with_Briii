@@ -1,0 +1,117 @@
+/* =======================================================
+GLOBAL STYLES
+======================================================= */
+
+:root {
+    /* Palette */
+    --color-papaya: #F2764D;
+    --color-marigold: #E8A93D;
+    --color-clay-rose: #B8503B;
+    --color-cream: #FBF3E6;
+    --color-umber: #3A2618;
+    --color-butter: #F6D488;
+
+    /* Fonts */
+    --font-display: 'Fraunces', serif;
+    --font-body: 'Work Sans', sans-serif;
+    --font-accent: 'Caveat', cursive;
+
+    /* Type scale */
+    --text-h1: 40px;
+    --text-h2: 28px;
+    --text-h3: 20px;
+    --text-body: 16px;
+    --text-small: 14px;
+
+    /* Line height */
+    --leading-body: 1.6;
+    --leading-heading: 1.15;
+
+    /* Spacing scale */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+
+    /* Layout */
+    --content-max-width: 1100px;
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+
+    /* Borders */
+    --border-light: 1px solid rgba(58, 38, 24, 0.12);
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    z-index: 99999;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* =======================================================
+MOBILE STYLES
+======================================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-cream);
+    color: var(--color-umber);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-display);
+    line-height: var(--leading-heading);
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+}
+
+h3 {
+    font-size: var(--text-h3);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ----------------------------------------
+   Nav 
+   ---------------------------------------- */
+
+/* =======================================================
+TABLET STYLES
+========================================================*/
+@media (min-width: 768px) {}
+
+/* =======================================================
+DESKTOP STYLES
+========================================================*/
+@media (min-width: 1024px) {}
