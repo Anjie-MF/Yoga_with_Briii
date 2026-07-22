@@ -10,13 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
+
+  <!-- Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoga with Briii | Kids, Family & Community Yoga in Oxford, MS</title>
   <meta name="description"
     content="Warm, welcoming yoga classes in Oxford, MS for kids, families, athletes, and community groups. Mommy & Me, Athlete Reset, Community Saturdays, and Kids Yoga. Yoga for every body.">
-
-  <!-- ADD URL once approved -->
-  <link rel="canonical" href="">
+  <link rel="canonical" href=""> <!-- ADD URL once approved -->
   <meta name="robots" content="index,follow">
 
   <!-- Font Icons -->
@@ -46,6 +46,8 @@
   <!-- Styling -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
+
+  <!-- JS Scripts -->
   <script src="./js/script.js" defer></script>
 
   <!-- Local SEO Schema Markup for Hybrid Mobile/Studio Business -->
@@ -87,9 +89,13 @@
       <button type="button" class="cta">View classes</button>
     </header>
   </section>
-  <main class="main-content">
+
+  <main id="main-content" class="main-content">
     <section class="about-briii">
-      <img src="/assets/FB_IMG_aboutMe.jpg" alt="photo of yoga instructor Briii">
+      <picture>
+        <source srcset="./assets/aboutMe_clark_blue.avif" type="image/avif">
+        <img src="./assets/aboutMe_clark_blue.jpg" alt="photo of yoga instructor Briii">
+      </picture>
       <h2>Meet Briii</h2>
       <p class="about-copy">I've spent years teaching yoga to kids, families, athletes, and community groups because I
         believe yoga is for every body, not just people who can already touch their toes. My classes are playful,
@@ -102,7 +108,8 @@
       <h2>Wellness Packages</h2>
       <p class="packages-subcopy">A class for every stage of life.</p>
       <article class="mommy-card">
-        <img src="" alt="">
+        <img src="./assets/mommyMeImg-gabby-k.jpg"
+          alt="A mother and two children meditating in a bright, minimalist bedroom for mindfulness practice.">
         <p class="badge">Family</p>
         <h3 class="card-title">Mommy and me Yoga</h3>
         <p class="card-description">A gentle, playful class for parents and little ones to move, breathe, and bond
@@ -110,7 +117,8 @@
         <p class="card-price">$100 /class</p>
       </article>
       <article class="athlete-card">
-        <img src="" alt="">
+        <img src="./assets/athleteImg-edmond-dantes.jpg"
+          alt="Two men meditating outdoors on yoga mats in a serene setting.">
         <p class="badge">Athletes</p>
         <h3 class="card-title">The Athlete Reset</h3>
         <p class="card-description">Recovery-focused yoga built for young athletes to reset the body and calm the mind
@@ -118,7 +126,8 @@
         <p class="card-price">$100 /class</p>
       </article>
       <article class="community-card">
-        <img src="" alt="">
+        <img src="./assets/communityImg-yankrukov.jpg"
+          alt="A multicultural group practicing yoga poses in an indoor studio setting, embracing health and mindfulness.">
         <p class="badge">Community</p>
         <h3 class="card-title">Community Weekend</h3>
         <p class="card-description">Complimentary weekend classes open to all in the studio community - no experience
@@ -126,7 +135,8 @@
         <p class="card-price">Free</p>
       </article>
       <article class="kid-card">
-        <img src="" alt="">
+        <img src="./assets/kidsImg-yankrukov.jpg"
+          alt="Diverse group of children meditating in a yoga class indoors on artificial grass.">
         <p class="badge">Kids</p>
         <h3 class="card-title">Kids Yoga</h3>
         <p class="card-description">A joyful introduction to yoga for children, full of movement, stories, and giggles.
@@ -139,12 +149,10 @@
     <section class="booking">
       <h2>Book a class</h2>
       <p class="booking-copy">All levels and ages welcome — pick a time that works for you.</p>
-      <!-- Calendly inline widget begin -->
       <div class="calendly-inline-widget"
         data-url="https://calendly.com/amfarmer2022/30min?background_color=f3e4d3&text_color=4a2e22&primary_color=c1603a"
-        style="min-width:320px;height:700px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      <!-- Calendly inline widget end -->
+        style="min-width:320px;height:700px;">
+      </div>
     </section>
 
     <section class="contact">
@@ -184,4 +192,5 @@
       Site coded by <a href="https://anjelica-mf.vercel.app" target="_blank" rel="noopener noreferrer">Anjelica</a>
     </p>
   </footer>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
