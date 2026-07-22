@@ -97,21 +97,51 @@ h3 {
     font-size: var(--text-h3);
 }
 
+/* 
 img {
     max-width: 100%;
     display: block;
+} */
+
+/* ----------------------------------------
+   Hero Img & Header 
+   ---------------------------------------- */
+.about-briii img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
 }
 
 /* ----------------------------------------
-   Nav 
+   Hero Img & Header 
    ---------------------------------------- */
 
 /* =======================================================
 TABLET STYLES
 ========================================================*/
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .about-briii img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 20px;
+    }
+}
 
 /* =======================================================
 DESKTOP STYLES
 ========================================================*/
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .about-briii img {
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 20px;
+    }
+
+}
