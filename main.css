@@ -4,16 +4,16 @@ GLOBAL STYLES
 
 :root {
     /* Palette */
-    --color-papaya: #F2764D;
+    --color-terracotta: #C1603A;
     --color-marigold: #E8A93D;
     --color-clay-rose: #B8503B;
-    --color-cream: #FBF3E6;
-    --color-umber: #3A2618;
+    --color-sand-cream: #FBF3E7;
+    --color-warm-clay: #4A2E22;
     --color-butter: #F6D488;
 
     /* Fonts */
     --font-display: 'Fraunces', serif;
-    --font-body: 'Work Sans', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
     --font-accent: 'Caveat', cursive;
 
     /* Type scale */
@@ -44,6 +44,7 @@ GLOBAL STYLES
 
     /* Borders */
     --border-light: 1px solid rgba(58, 38, 24, 0.12);
+
 }
 
 .skip-link {
@@ -61,17 +62,14 @@ GLOBAL STYLES
     top: 0;
 }
 
-/* =======================================================
-MOBILE STYLES
-======================================================= */
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background-color: var(--color-cream);
-    color: var(--color-umber);
+    background-color: var(--color-clay-rose);
+    color: var(--color-warm-clay);
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: var(--leading-body);
@@ -97,14 +95,69 @@ h3 {
     font-size: var(--text-h3);
 }
 
-/* 
 img {
     max-width: 100%;
     display: block;
-} */
+}
+
+/* =======================================================
+MOBILE STYLES
+======================================================= */
+/* ----------------------------------------
+   Hero Section
+   ---------------------------------------- */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 3;
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    color: var(--color-sand-cream);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(193, 96, 58, 0.75), rgba(193, 96, 58, 0));
+    z-index: 2;
+}
+
+.hero-subhead {
+    padding: 5px;
+}
+
+.cta-button {
+    padding: var(--space-sm);
+    color: var(--color-warm-clay);
+    background-color: var(--color-sand-cream);
+    width: 40%;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* ----------------------------------------
-   Hero Img & Header 
+   About Brii Section
    ---------------------------------------- */
 .about-briii img {
     width: 160px;
@@ -114,9 +167,7 @@ img {
     margin: 20px;
 }
 
-/* ----------------------------------------
-   Hero Img & Header 
-   ---------------------------------------- */
+
 
 /* =======================================================
 TABLET STYLES

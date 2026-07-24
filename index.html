@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
     rel="stylesheet">
 
   <!-- Meta -->
@@ -37,11 +37,11 @@
 
   <!-- Icons -->
   <meta name="theme-color" content="#C1603A">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Styling -->
   <link rel="stylesheet" href="reset.css">
@@ -82,11 +82,16 @@
 
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <section class="hero-img">
-    <header class="hero-content">
+  <section class="hero">
+    <picture>
+      <source srcset="./assets/heroImg-ai25studioai.avif" type="image/avif">
+      <img src="./assets/heroImg-ai25studioai.jpg"
+        alt="A diverse group of adults engaged in relaxation and meditation in a cozy yoga studio setting.">
+    </picture>
+    <header class="hero-copy">
       <h1>Yoga for every body, every age</h1>
-      <p>Classes for kids, families, athletes and community</p>
-      <button type="button" class="cta">View classes</button>
+      <p class="hero-subhead">Classes for kids, families, athletes and community</p>
+      <a href="#packages" class="cta-button">View classes</a>
     </header>
   </section>
 
@@ -104,7 +109,7 @@
     </section>
 
     <!-- Packages -->
-    <section class="packages">
+    <section id="packages" class="packages">
       <h2>Wellness Packages</h2>
       <p class="packages-subcopy">A class for every stage of life.</p>
       <article class="mommy-card">
