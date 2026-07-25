@@ -4,12 +4,13 @@ GLOBAL STYLES
 
 :root {
     /* Palette */
-    --color-terracotta: #C1603A;
-    --color-marigold: #E8A93D;
-    --color-clay-rose: #B8503B;
-    --color-sand-cream: #FBF3E7;
-    --color-warm-clay: #4A2E22;
-    --color-butter: #F6D488;
+    --primary-color-terracotta: #C1603A;
+    --secondary-color-coral: #F0876C;
+    --accent-color-golden-honey: #E3A857;
+    --soft-accent-color-dusty-rose: #D98B7C;
+    --text-color-warm-clay: #4A2E22;
+    --bg-color-sand-cream: #FBF3E7;
+    --alt-bg-color-warm-linen: #F3E4D3;
 
     /* Fonts */
     --font-display: 'Fraunces', serif;
@@ -68,8 +69,8 @@ GLOBAL STYLES
 
 body {
     margin: 0;
-    background-color: var(--color-clay-rose);
-    color: var(--color-warm-clay);
+    background-color: var(--accent-color-golden-honey);
+    color: var(--text-color-warm-clay);
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: var(--leading-body);
@@ -127,7 +128,7 @@ MOBILE STYLES
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    color: var(--color-sand-cream);
+    color: var(--bg-color-sand-cream);
 }
 
 .hero::after {
@@ -138,18 +139,28 @@ MOBILE STYLES
     z-index: 2;
 }
 
+.hero-copy h1 {
+    font-family: var(--font-display);
+}
+
 .hero-subhead {
     padding: 5px;
+    margin: 0;
+    font-family: var(--font-body);
 }
 
 .cta-button {
-    padding: var(--space-sm);
-    color: var(--color-warm-clay);
-    background-color: var(--color-sand-cream);
-    width: 40%;
+    padding: var(--space-xs);
+    color: var(--text-color-warm-clay);
+    background-color: var(--bg-color-sand-cream);
+    width: 30%;
     border-radius: var(--radius-sm);
     white-space: nowrap;
-    font-weight: 400;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color-terracotta);
 }
 
 a {
