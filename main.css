@@ -96,11 +96,6 @@ h3 {
     font-size: var(--text-h3);
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 /* =======================================================
 MOBILE STYLES
 ======================================================= */
@@ -196,10 +191,12 @@ a {
 .about-copy {
     font-family: var(--font-body);
     text-align: center;
+    font-size: var(--text-body)
 }
 
 .about-cred {
     font-family: var(--font-body);
+    font-size: var(--text-body);
     text-align: center;
     color: var(--accent-color-golden-honey)
 }
@@ -207,6 +204,33 @@ a {
 /* ----------------------------------------
   Wellness Pacakages Section
    ---------------------------------------- */
+.wellness-packages {
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: aqua;
+    /* change to warm linen after test  */
+}
+
+.wellness-packages h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+}
+
+.packages-subcopy {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+}
+
+.mommy-card img,
+.athlete-card img,
+.community-card img,
+.kid-card img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    width: 100%;
+}
 
 
 /* =======================================================
