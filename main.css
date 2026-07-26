@@ -42,10 +42,6 @@ GLOBAL STYLES
     /* Radius */
     --radius-sm: 8px;
     --radius-md: 12px;
-
-    /* Borders */
-    --border-light: 1px solid rgba(58, 38, 24, 0.12);
-
 }
 
 .skip-link {
@@ -69,7 +65,7 @@ GLOBAL STYLES
 
 body {
     margin: 0;
-    background-color: var(--accent-color-golden-honey);
+    background-color: var(--alt-bg-color-warm-linen);
     color: var(--text-color-warm-clay);
     font-family: var(--font-body);
     font-size: var(--text-body);
@@ -148,7 +144,7 @@ MOBILE STYLES
     padding: var(--space-xs);
     color: var(--text-color-warm-clay);
     background-color: var(--bg-color-sand-cream);
-    width: 30%;
+    width: 40%;
     border-radius: var(--radius-sm);
     white-space: nowrap;
     text-align: center;
@@ -435,8 +431,8 @@ textarea {
 button {
     margin-top: 1.25rem;
     padding: 0.75rem 1.5rem;
-    outline: 1px solid var(--primary-color-terracotta);
-    border-radius: 3px;
+    border: 1px solid var(--primary-color-terracotta);
+    border-radius: 4px;
     cursor: pointer;
     font-family: var(--font-body);
     letter-spacing: 0.08rem;
@@ -453,6 +449,60 @@ button:focus-visible,
 a:focus-visible {
     outline: 3px solid var(--color-terracotta);
     outline-offset: 2px;
+}
+
+/* ----------------------------------------
+Footer Section
+   ---------------------------------------- */
+
+footer {
+    background-color: var(--text-color-warm-clay);
+}
+
+.social {
+    padding-bottom: 20px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0;
+    margin: 1rem 0 0;
+    list-style: none;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.social a:hover {
+    opacity: 0.7;
+}
+
+.social a:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
+.social i {
+    color: white;
+    font-size: var(--space-lg);
+}
+
+.footer-credit {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    color: white;
+    text-align: center;
 }
 
 /* =======================================================
