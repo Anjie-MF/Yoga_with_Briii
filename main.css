@@ -250,7 +250,7 @@ a {
 }
 
 .mommy-copy .badge {
-    margin: 0 5px;
+    margin: 0;
     padding: 10px;
     border-radius: 999px;
     background-color: var(--soft-accent-color-dusty-rose);
@@ -259,6 +259,7 @@ a {
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: var(--leading-heading);
+    text-align: center;
 }
 
 .athlete-card {
@@ -266,15 +267,16 @@ a {
 }
 
 .athlete-card .badge {
-    margin: 0 5px;
+    margin: 0;
     padding: 10px;
     border-radius: 999px;
     background-color: var(--primary-color-terracotta);
     color: white;
-    width: 30%;
+    width: 50%;
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: var(--leading-heading);
+    text-align: center;
 }
 
 .community-card {
@@ -282,15 +284,16 @@ a {
 }
 
 .community-card .badge {
-    margin: 0 5px;
+    margin: 0;
     padding: 10px;
     border-radius: 999px;
     background-color: var(--accent-color-golden-honey);
     color: var(--text-color-warm-clay);
-    width: 45%;
+    width: 50%;
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: var(--leading-heading);
+    text-align: center;
 }
 
 .kid-card {
@@ -298,7 +301,7 @@ a {
 }
 
 .kid-card .badge {
-    margin: 0 5px;
+    margin: 0;
     padding: 10px;
     border-radius: 999px;
     background-color: var(--secondary-color-coral);
@@ -307,13 +310,19 @@ a {
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: var(--leading-heading);
+    text-align: center;
+}
+
+.athlete-card img,
+.kid-card img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    width: 100%;
 }
 
 .mommy-card img,
-.athlete-card img,
-.community-card img,
-.kid-card img {
-    aspect-ratio: 3/2;
+.community-card img {
+    aspect-ratio: 1/1;
     object-fit: cover;
     width: 100%;
 }
