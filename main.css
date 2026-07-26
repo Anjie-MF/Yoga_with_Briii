@@ -209,28 +209,140 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: aqua;
-    /* change to warm linen after test  */
+    background-color: var(--alt-bg-color-warm-linen);
 }
 
 .wellness-packages h2 {
     font-family: var(--font-display);
     font-size: var(--text-h2);
+    line-height: var(--leading-heading);
 }
 
 .packages-subcopy {
     font-family: var(--font-body);
     font-size: var(--text-body);
+    line-height: var(--leading-body);
+}
+
+.mommy-card,
+.athlete-card,
+.community-card,
+.kid-card {
+    margin: var(--space-md);
+    background-color: white;
+    border-radius: var(--radius-md);
+}
+
+.mommy-copy,
+.athlete-copy,
+.community-copy,
+.kid-copy {
+    padding: var(--space-sm);
+}
+
+.mommy-card {
+    border-top: 10px solid var(--soft-accent-color-dusty-rose);
+}
+
+.mommy-copy .badge {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 999px;
+    background-color: var(--soft-accent-color-dusty-rose);
+    color: var(--text-color-warm-clay);
+    width: 35%;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+}
+
+.athlete-card {
+    border-top: 10px solid var(--primary-color-terracotta);
+}
+
+.athlete-card .badge {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 999px;
+    background-color: var(--primary-color-terracotta);
+    color: white;
+    width: 30%;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+}
+
+.community-card {
+    border-top: 10px solid var(--accent-color-golden-honey);
+}
+
+.community-card .badge {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 999px;
+    background-color: var(--accent-color-golden-honey);
+    color: var(--text-color-warm-clay);
+    width: 45%;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+}
+
+.kid-card {
+    border-top: 15px solid var(--secondary-color-coral);
+}
+
+.kid-card .badge {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 999px;
+    background-color: var(--secondary-color-coral);
+    color: var(--text-color-warm-clay);
+    width: 25%;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
 }
 
 .mommy-card img,
 .athlete-card img,
 .community-card img,
 .kid-card img {
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     object-fit: cover;
     width: 100%;
 }
+
+.mommy-card .title,
+.athlete-card .title,
+.community-card .title,
+.kid-card .title {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    line-height: var(--leading-heading);
+    margin: 5px 0;
+}
+
+
+.mommy-card .card-description,
+.athlete-card .card-description,
+.community-card .card-description,
+.kid-card .card-description {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+}
+
+.mommy-card .card-price,
+.athlete-card .card-price,
+.community-card .card-price,
+.kid-card .card-price {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+    color: var(--accent-color-golden-honey);
+}
+
 
 
 /* =======================================================
