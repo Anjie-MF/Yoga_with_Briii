@@ -343,6 +343,34 @@ a {
     color: var(--accent-color-golden-honey);
 }
 
+/* ----------------------------------------
+Booking Section
+   ---------------------------------------- */
+.booking {
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--bg-color-sand-cream);
+}
+
+.booking h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    line-height: var(--leading-heading);
+}
+
+.booking-copy {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    margin: 0;
+}
+
+.calendly-inline-widget {
+    border-top: 10px solid var(--primary-color-terracotta);
+    border-radius: var(--radius-md);
+}
 
 
 /* =======================================================
