@@ -231,6 +231,15 @@ a {
     margin: var(--space-md);
     background-color: white;
     border-radius: var(--radius-md);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mommy-card:hover,
+.athlete-card:hover,
+.community-card:hover,
+.kid-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(58, 38, 24, 0.15);
 }
 
 .mommy-copy,
@@ -372,6 +381,79 @@ Booking Section
     border-radius: var(--radius-md);
 }
 
+/* ----------------------------------------
+Contact Section
+   ---------------------------------------- */
+.contact {
+    padding: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--alt-bg-color-warm-linen);
+}
+
+.contact h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-h2);
+    line-height: var(--leading-heading);
+}
+
+.contact-copy {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 1rem 0 0.4rem;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-color-warm-clay);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--primary-color-terracotta);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    background-color: white;
+    color: var(--text-color-warm-clay);
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    outline: 1px solid var(--primary-color-terracotta);
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--text-color-warm-clayi);
+    background-color: transparent;
+    max-width: fit-content;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--color-terracotta);
+    outline-offset: 2px;
+}
 
 /* =======================================================
 TABLET STYLES
