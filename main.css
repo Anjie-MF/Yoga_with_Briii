@@ -148,6 +148,7 @@ MOBILE STYLES
     border-radius: var(--radius-sm);
     white-space: nowrap;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .cta-button:hover {
