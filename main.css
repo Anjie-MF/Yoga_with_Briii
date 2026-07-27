@@ -452,11 +452,16 @@ button {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+button:hover {
+    background-color: var(--primary-color-terracotta);
+    color: white;
+}
+
 input:focus,
 textarea:focus,
 button:focus-visible,
 a:focus-visible {
-    outline: 3px solid var(--color-terracotta);
+    outline: 3px solid var(--primary-color-terracotta);
     outline-offset: 2px;
 }
 
