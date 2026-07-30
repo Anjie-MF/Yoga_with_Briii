@@ -178,11 +178,14 @@ a {
     border-radius: 50%;
     object-fit: cover;
     margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-briii h2 {
     font-family: var(--font-accent);
-    font-size: var(--text-h2)
+    font-size: var(--text-h2);
+    text-align: center;
 }
 
 .about-copy {
@@ -548,6 +551,23 @@ footer {
 TABLET STYLES
 ========================================================*/
 @media (min-width: 768px) {
+
+    .about-briii {
+        outline: 1px solid aqua;
+        padding: 26px 28px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        outline: 1px solid red;
+    }
+
 
     .about-briii img {
         width: 200px;
