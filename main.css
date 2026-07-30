@@ -625,8 +625,25 @@ DESKTOP STYLES
 ========================================================*/
 @media (min-width: 1024px) {
 
-    .hero {
-        position: relative;
+    #desktop-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #desktop-hero .hero-img {
+        grid-column: 1/-1;
+    }
+
+    #desktop-hero .hero-img img {
+        display: block;
+        width: 100%;
+    }
+
+    #desktop-hero .hero-copy {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 3;
+        padding: var(--space-sm);
     }
 
 }
