@@ -550,24 +550,18 @@ footer {
 /* =======================================================
 TABLET STYLES
 ========================================================*/
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+    .hero img {
+        object-position: center 25%;
+    }
 
     .about-briii {
-        outline: 1px solid aqua;
-        padding: 26px 28px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        grid-template-columns: fit-content(40%) 1fr;
+        gap: 10px;
         align-items: center;
+        padding: 26px 28px;
     }
-
-    .about-container {
-        display: flex;
-        justify-content: start;
-        align-items: flex-start;
-        outline: 1px solid red;
-    }
-
 
     .about-briii img {
         width: 200px;
@@ -575,6 +569,54 @@ TABLET STYLES
         border-radius: 50%;
         object-fit: cover;
         margin: 20px;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .about-container .about-copy {
+        text-align: start;
+    }
+
+    .wellness-packages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(auto, 1fr);
+        gap: var(--space-md);
+        padding: var(--space-md);
+    }
+
+    .wellness-packages .wellness-copy {
+        grid-column: 1/-1;
+    }
+
+    .wellness-packages .mommy-card img,
+    .wellness-packages .athlete-card img,
+    .wellness-packages .community-card img,
+    .wellness-packages .kid-card img {
+        aspect-ratio: 16/10;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .wellness-packages .mommy-card,
+    .wellness-packages .athlete-card,
+    .wellness-packages .community-card,
+    .wellness-packages .kid-card {
+        margin: 0;
+        height: 100%;
+    }
+
+    .wellness-packages .mommy-card img {
+        object-position: 25% 85%;
+    }
+
+    .wellness-packages .community-card img {
+        object-position: 15% 30%;
     }
 }
 
@@ -585,33 +627,6 @@ DESKTOP STYLES
 
     .hero {
         position: relative;
-    }
-
-    .hero img {
-        width: 100%;
-        height: 100%;
-        /* object-fit: contain;  */
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-    }
-
-    .about-briii {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-    }
-
-    .about-container {
-        text-align: start;
-    }
-
-    .about-briii img {
-        width: 240px;
-        height: 240px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 20px;
     }
 
 }
