@@ -1,10 +1,13 @@
 
 const form = document.querySelector('form');
+const toastContainer = document.getElementById('toast-container');
+const errorMessage = 'Oops! There was a promblem. Please try again';
+const successMessage = 'Your submission is complete.';
 
 form.addEventListener('submit', async (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
- const formData = new FormData(form);
+    const formData = new FormData(form);
 
     try {
         const response = await fetch(form.action, {
@@ -16,27 +19,24 @@ form.addEventListener('submit', async (event) => {
         });
 
         if (response.ok) {
-            showToast('Success! Your submission is complete.');
+            showToast(successMessage);
             form.reset();
         } else {
-            showToast('Oops! There was a problem. Please try again.');
+            showToast(errorMessage);
         }
     } catch (error) {
-        showToast('Oops! There was a problem. Please try again.');
+        showToast(errorMessage);
     }
 });
 
 function showToast(message) {
-    const toastContainer = document.getElementById('toast-container');
     const toast = document.createElement('div');
     toast.classList.add('toast');
     toast.textContent = message;
 
     toastContainer.appendChild(toast);
 
-    setTimeout(() => {
-        toast.classList.add('show');
-    }, 10);
+    requestAnimationFrame(() => toast.classList.add('show'));
 
     setTimeout(() => {
         toast.classList.remove('show');
