@@ -104,13 +104,19 @@ MOBILE STYLES
     overflow: hidden;
 }
 
+.hero img {
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 1;
+}
+
 .hero-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-
 
 .hero::after {
     content: "";
