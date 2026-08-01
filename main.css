@@ -224,22 +224,52 @@ a {
     line-height: var(--leading-body);
 }
 
-.mommy-card,
-.athlete-card,
-.community-card,
-.kid-card {
+.card {
     margin: var(--space-md);
     background-color: white;
     border-radius: var(--radius-md);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mommy-card:hover,
-.athlete-card:hover,
-.community-card:hover,
-.kid-card:hover {
+.card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(58, 38, 24, 0.15);
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.badge {
+    margin: 0;
+    padding: 10px;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+    text-align: center;
+}
+
+.card-title {
+    font-family: var(--font-display);
+    font-size: var(--text-h3);
+    line-height: var(--leading-heading);
+    margin: 5px 0;
+}
+
+.card-description {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+}
+
+.card-price {
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: var(--leading-heading);
+    color: var(--accent-color-golden-honey);
 }
 
 .mommy-copy,
@@ -253,68 +283,16 @@ a {
     border-top: 10px solid var(--soft-accent-color-dusty-rose);
 }
 
-.mommy-copy .badge {
-    margin: 0;
-    padding: 10px;
-    border-radius: 999px;
-    background-color: var(--soft-accent-color-dusty-rose);
-    color: var(--text-color-warm-clay);
-    width: 35%;
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-heading);
-    text-align: center;
-}
-
 .athlete-card {
     border-top: 10px solid var(--primary-color-terracotta);
-}
-
-.athlete-card .badge {
-    margin: 0;
-    padding: 10px;
-    border-radius: 999px;
-    background-color: var(--primary-color-terracotta);
-    color: white;
-    width: 50%;
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-heading);
-    text-align: center;
 }
 
 .community-card {
     border-top: 10px solid var(--accent-color-golden-honey);
 }
 
-.community-card .badge {
-    margin: 0;
-    padding: 10px;
-    border-radius: 999px;
-    background-color: var(--accent-color-golden-honey);
-    color: var(--text-color-warm-clay);
-    width: 50%;
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-heading);
-    text-align: center;
-}
-
 .kid-card {
     border-top: 15px solid var(--secondary-color-coral);
-}
-
-.kid-card .badge {
-    margin: 0;
-    padding: 10px;
-    border-radius: 999px;
-    background-color: var(--secondary-color-coral);
-    color: var(--text-color-warm-clay);
-    width: 25%;
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-heading);
-    text-align: center;
 }
 
 .athlete-card img,
@@ -329,36 +307,6 @@ a {
     aspect-ratio: 1/1;
     object-fit: cover;
     width: 100%;
-}
-
-.mommy-card .title,
-.athlete-card .title,
-.community-card .title,
-.kid-card .title {
-    font-family: var(--font-display);
-    font-size: var(--text-h3);
-    line-height: var(--leading-heading);
-    margin: 5px 0;
-}
-
-
-.mommy-card .card-description,
-.athlete-card .card-description,
-.community-card .card-description,
-.kid-card .card-description {
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-body);
-}
-
-.mommy-card .card-price,
-.athlete-card .card-price,
-.community-card .card-price,
-.kid-card .card-price {
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-heading);
-    color: var(--accent-color-golden-honey);
 }
 
 /* ----------------------------------------
@@ -450,7 +398,7 @@ button {
     font-family: var(--font-body);
     letter-spacing: 0.08rem;
     text-transform: uppercase;
-    color: var(--text-color-warm-clayi);
+    color: var(--text-color-warm-clay);
     background-color: transparent;
     max-width: fit-content;
     transition: background-color 0.2s ease, color 0.2s ease;
@@ -530,7 +478,7 @@ footer {
 }
 
 .social a:focus {
-    outline: 2px solid var(--gold);
+    outline: 2px solid var(--accent-color-golden-honey);
     outline-offset: 4px;
 }
 
