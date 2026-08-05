@@ -573,16 +573,6 @@ TABLET STYLES
         grid-column: 1/-1;
     }
 
-    /* 
-    .wellness-packages .mommy-card img,
-    .wellness-packages .athlete-card img,
-    .wellness-packages .community-card img,
-    .wellness-packages .kid-card img {
-        aspect-ratio: 16/10;
-        object-fit: cover;
-        width: 100%;
-    } */
-
     .wellness-packages .mommy-card,
     .wellness-packages .athlete-card,
     .wellness-packages .community-card,
@@ -626,4 +616,23 @@ DESKTOP STYLES
         padding: var(--space-sm);
     }
 
+    .community-copy .badge {
+        width: 15%;
+        text-align: left;
+    }
+
+    .kid-copy .badge {
+        width: 10%;
+        text-align: center;
+    }
+
+    .mommy-copy .badge {
+        width: 15%;
+        text-align: center;
+    }
+
+     .athlete-copy .badge {
+        width: 15%;
+        text-align: center;
+    }
 }
