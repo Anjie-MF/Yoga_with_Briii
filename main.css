@@ -257,6 +257,14 @@ a {
     display: block;
 }
 
+.mommy-card img {
+    object-position: 75% 75%;
+}
+
+.community-card img {
+    object-position: 50% 24%;
+}
+
 .badge {
     margin: 0;
     padding: 10px;
