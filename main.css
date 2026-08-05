@@ -6,7 +6,7 @@ GLOBAL STYLES
     /* Palette */
     --primary-color-terracotta: #C1603A;
     --secondary-color-coral: #F0876C;
-    --accent-color-golden-honey: #C67A32;
+    --accent-color-golden-honey: #835021;
     --soft-accent-color-dusty-rose: #D98B7C;
     --text-color-warm-clay: #4A2E22;
     --bg-color-sand-cream: #FBF3E7;
@@ -131,7 +131,7 @@ MOBILE STYLES
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: var(--bg-color-sand-cream);
+    color: #e9e8e6;
 }
 
 .hero-copy h1 {
@@ -288,7 +288,8 @@ a {
 
 .community-card .badge {
     background-color: var(--accent-color-golden-honey);
-    color: var(--text-color-warm-clay);
+    color: #F5F2EE;
+    width: 50%;
 }
 
 .kid-card .badge {
