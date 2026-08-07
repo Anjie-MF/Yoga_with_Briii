@@ -101,13 +101,14 @@ MOBILE STYLES
 .hero {
     position: relative;
     overflow: hidden;
-    min-height: 420px;
+    min-height: 220px;
 }
 
 .hero-img {
     position: absolute;
     inset: 0;
     z-index: 1;
+    background-color: #5c2714;
 }
 
 .hero-img img {
@@ -115,15 +116,14 @@ MOBILE STYLES
     height: 100%;
     object-fit: cover;
     display: block;
+    object-position: center 30%;
 }
 
 .hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top,
-            rgba(74, 46, 34, 0.95),
-            rgba(74, 46, 34, 0.82));
+    background: linear-gradient(to top, rgba(193, 96, 58, 0.85), rgba(193, 96, 58, 0.25));
     z-index: 2;
 }
 
@@ -135,6 +135,7 @@ MOBILE STYLES
     flex-direction: column;
     justify-content: flex-end;
     color: #e9e8e6;
+    background-color: transparent;
 }
 
 .hero-copy h1 {
@@ -151,7 +152,7 @@ MOBILE STYLES
     padding: var(--space-xs);
     color: var(--text-color-warm-clay);
     background-color: var(--bg-color-sand-cream);
-    width: 40%;
+    width: 50%;
     border-radius: var(--radius-sm);
     white-space: nowrap;
     text-align: center;
@@ -534,7 +535,11 @@ TABLET STYLES
 ========================================================*/
 @media (min-width: 600px) {
     .hero img {
-        object-position: center 25%;
+        object-position: top 25%;
+    }
+
+    .hero-copy .cta-button {
+        width: 40%;
     }
 
     .about-briii {
