@@ -120,7 +120,7 @@ MOBILE STYLES
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(193, 96, 58, 0.85), rgba(193, 96, 58, 0.25));
+    background: linear-gradient(to top, rgba(131, 80, 33, 0.9), rgba(131, 80, 33, 0.55));
     z-index: 2;
 }
 
@@ -631,7 +631,7 @@ DESKTOP STYLES
         text-align: center;
     }
 
-     .athlete-copy .badge {
+    .athlete-copy .badge {
         width: 15%;
         text-align: center;
     }
