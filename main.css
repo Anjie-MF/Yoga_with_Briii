@@ -101,6 +101,7 @@ MOBILE STYLES
 .hero {
     position: relative;
     overflow: hidden;
+    min-height: 420px;
 }
 
 .hero-img {
