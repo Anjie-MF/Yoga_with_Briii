@@ -265,7 +265,7 @@ a {
     object-position: 75% 75%;
 }
 
-.community-card img {
+.group-card img {
     object-position: 50% 24%;
 }
 
@@ -290,7 +290,7 @@ a {
     color: #F5F2EE;
 }
 
-.community-card .badge {
+.group-card .badge {
     background-color: var(--accent-color-golden-honey);
     color: #F5F2EE;
     width: 50%;
@@ -323,7 +323,7 @@ a {
 
 .mommy-copy,
 .athlete-copy,
-.community-copy,
+.group-copy,
 .kid-copy {
     padding: var(--space-sm);
 }
@@ -336,7 +336,7 @@ a {
     border-top: 10px solid var(--primary-color-terracotta);
 }
 
-.community-card {
+.group-card {
     border-top: 10px solid var(--accent-color-golden-honey);
 }
 
@@ -583,7 +583,7 @@ TABLET STYLES
 
     .wellness-packages .mommy-card,
     .wellness-packages .athlete-card,
-    .wellness-packages .community-card,
+    .wellness-packages .group-card,
     .wellness-packages .kid-card {
         margin: 0;
         height: 100%;
@@ -593,7 +593,7 @@ TABLET STYLES
         object-position: 25% 85%;
     }
 
-    .wellness-packages .community-card img {
+    .wellness-packages .group-card img {
         object-position: 15% 30%;
     }
 }
@@ -624,7 +624,7 @@ DESKTOP STYLES
         padding: var(--space-sm);
     }
 
-    .community-copy .badge {
+    .group-copy .badge {
         width: 25%;
         text-align: left;
     }
