@@ -181,10 +181,11 @@ a {
 }
 
 .about-briii img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
     object-fit: cover;
+    object-position: center bottom;
     margin: 20px;
     justify-content: center;
     align-items: center;
@@ -544,17 +545,18 @@ TABLET STYLES
 
     .about-briii {
         display: grid;
-        grid-template-columns: fit-content(40%) 1fr;
-        gap: 10px;
+        grid-template-columns: fit-content(300px) 1fr;
+        gap: 30px;
         align-items: center;
         padding: 26px 28px;
     }
 
     .about-briii img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
         object-fit: cover;
+        object-position: center bottom;
         margin: 20px;
     }
 
@@ -625,7 +627,7 @@ DESKTOP STYLES
     }
 
     .group-copy .badge {
-        width: 25%;
+        width: 10%;
         text-align: left;
     }
 
