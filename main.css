@@ -210,6 +210,12 @@ a {
     color: var(--accent-color-golden-honey)
 }
 
+.also-teaching {
+    background-color: var(--bg-color-sand-cream);
+    padding: var(--space-sm);
+
+}
+
 /* ----------------------------------------
   Wellness Pacakages Section
    ---------------------------------------- */
