@@ -82,8 +82,18 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <section class="hero" id="desktop-hero">
     <div class="hero-img">
-      <img src="./assets/heroImg-ai25studioai_29kb.avif" width="1600" height="900" fetchpriority="high"
-        alt="A diverse group of adults engaged in relaxation and meditation in a cozy yoga studio setting.">
+      <picture>
+        <source type="image/avif" srcset="./assets/heroImg-ai25studioai_hero-480.avif 480w,
+      ./assets/heroImg-ai25studioai_hero-800.avif 800w,
+      ./assets/heroImg-ai25studioai_hero-1200.avif 1200w" sizes="100vw">
+
+        <source type="image/jpeg" srcset="./assets/heroImg-ai25studioai_hero-480.jpg 480w,
+      ./assets/heroImg-ai25studioai_hero-800.jpg 800w,
+      ./assets/heroImg-ai25studioai_hero-1200.jpg 1200w" sizes="100vw">
+
+        <img src="./assets/heroImg-ai25studioai.jpg" width="1000" height="667" fetchpriority="high"
+          alt="A diverse group of adults engaged in relaxation and meditation in a cozy yoga studio setting.">
+      </picture>
     </div>
     <header class="hero-copy">
       <h1>Yoga for every body, every age</h1>
