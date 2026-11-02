@@ -283,38 +283,6 @@ a {
     object-position: 50% 24%;
 }
 
-.badge {
-    margin: 0;
-    padding: 10px;
-    border-radius: 999px;
-    font-family: var(--font-body);
-    font-size: var(--text-body);
-    line-height: var(--leading-heading);
-    text-align: center;
-    width: 30%;
-}
-
-.mommy-card .badge {
-    background-color: var(--soft-accent-color-dusty-rose);
-    color: var(--text-color-warm-clay);
-}
-
-.athlete-card .badge {
-    background-color: var(--primary-color-terracotta);
-    color: #F5F2EE;
-}
-
-.group-card .badge {
-    background-color: var(--accent-color-golden-honey);
-    color: #F5F2EE;
-    width: 50%;
-}
-
-.kid-card .badge {
-    background-color: var(--secondary-color-coral);
-    color: var(--text-color-warm-clay);
-}
-
 .card-title {
     font-family: var(--font-display);
     font-size: var(--text-h3);
@@ -655,25 +623,5 @@ DESKTOP STYLES
         grid-row: 1;
         z-index: 3;
         padding: var(--space-sm);
-    }
-
-    .group-copy .badge {
-        width: 10%;
-        text-align: left;
-    }
-
-    .kid-copy .badge {
-        width: 10%;
-        text-align: center;
-    }
-
-    .mommy-copy .badge {
-        width: 15%;
-        text-align: center;
-    }
-
-    .athlete-copy .badge {
-        width: 15%;
-        text-align: center;
     }
 }
