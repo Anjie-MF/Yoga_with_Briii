@@ -141,18 +141,18 @@ MOBILE STYLES
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: white;
-    background-color: transparent;
 }
 
 .hero-copy h1 {
     font-family: var(--font-display);
+    color: white;
 }
 
 .hero-subhead {
     padding: 5px;
     margin: 0;
     font-family: var(--font-body);
+    color: white;
 }
 
 .cta-button {
